@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../estilos/estilofilmes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="titulo">TICKETSMOVIES</h1>
+        </nav>
+    </header>
+    <div class="informacoes">
+        <div class="comprar">
+            <div class="filme">
+                <h2>VENOM 2</h2>
+                <img src="../imagens/filme2.jpg" alt="">
+            </div>
+            <div class="infocomprar">
+                <h1>VENOM 2</h1>
+                <p>Ano: 2021</p>
+                <p>Gênero: Ação/Ficção científica</p>
+                <p>Duração: 1h 45min</p>
+                <p>Direção: Andy Serkis</p>
+                <h2>SINOPSE</h2>
+                <p class="sinopse">O relacionamento entre Eddie e Venom está evoluindo. 
+                    Buscando a melhor forma de lidar com a inevitável simbiose, esse dois 
+                    lados descobrem como viver juntos e, de alguma forma, se tornarem melhores 
+                    juntos do que separados.</p>
+                <h2>COMPRAR</h2>
+                <p>VALOR: R$ 32,00</p>
+                <p>Quantidade: <input type="number" name="quantidade" id="quantidade" min="1"></p>
+                <p>Horários: <select name="horarios" id="horarios">
+                    <option value="horarioum">16:00</option>
+                    <option value="horariodois">18:00</option>
+                    <option value="horariotres">18:30</option>
+                    <option value="horarioquatro">20:30</option>
+                    <option value="horariocinco">21:00</option>
+                    <option value="horarioseis">22:30</option>
+                </select></p>
+                <button onclick="comprar()">COMPRAR</button>
+            </div>
+        </div>
+    </div>
+<script src="../script/comprar.js"></script>
+</body>
+</html>

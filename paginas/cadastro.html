@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar-se - Decodifica</title>
+    <link rel="stylesheet" href="../estilos/estilocadastro.css">
+    <link rel="stylesheet" href="../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <script src="../script/jquery.js"></script>
+</head>
+<body>
+    <form>
+        <div class="telaformulario">
+            <div class="cadastro" id="tela-cadastro">
+                <p class="titulo">TICKETSMOVIES</p>
+                <p class="devider"></p>
+                <p class="txttitulo">CADASTRE-SE GRÁTIS</p>
+                <div class="campos">
+                    <div>
+                        <p class="textinfo">NOME</p>
+                        <div class="form-input">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="NOME" id="nome" name="nome">
+                            <i class="fas fa-times-circle"  id="iconerronome"></i>
+                        </div>
+                        <p class="txterro" id="erronome"></p>
+                    </div>
+                    <div>
+                    <p class="textinfo">SOBRENOME</p>
+                    <div class="form-input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="SOBRENOME" id="sobrenome" name="sobrenome">
+                        <i class="fas fa-times-circle" id="iconerrosobren"></i>
+                    </div>
+                    <p class="txterro" id="errosobrenome"></p>
+                    </div>
+                </div>
+                <div class="campos">
+                        <div>
+                            <p class="textinfo">E-MAIL</p>
+                            <div class="form-input">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="E-MAIL" id="email" name="email">
+                                <i class="fas fa-times-circle"  id="iconerroemail"></i>
+                            </div>
+                            <p class="txterro" id="erroemail"></p>
+                        </div>
+                        <div>
+                            <p class="textinfo">CPF</p>
+                            <div class="form-input">
+                                <i class="fas fa-address-card"></i>
+                                <input type="text" placeholder="CPF" id="cpf" name="cpf">
+                                <i class="fas fa-times-circle"  id="iconerrocpf"></i>
+                            </div>
+                            <p class="txterro" id="errocpf"></p>
+                        </div>
+                </div>
+                <div class="campos">
+                    <div>
+                        <p class="textinfo">SENHA</p>
+                        <div class="form-input">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="SENHA" id="senha" name="senha">
+                            <i class="fas fa-times-circle" id="iconerrosenha"></i>
+                        </div>
+                        <p class="txterro" id="errosenha"></p>
+                    </div>
+                    <div>
+                        <p class="textinfo">CONFIRMAR SENHA</p>
+                        <div class="form-input">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="CONFIRMAR SENHA" id="confirmarsenha" name="confirmarsenha">
+                            <i class="fas fa-times-circle" id="iconerroconfsenha"></i>
+                        </div>
+                        <p class="txterro" id="erroconfirmarsenha"></p>
+                    </div>
+                </div>
+                <div class="campos">
+                    <div>
+                        <p class="textinfo">NOME (COMO ESTÁ ESCRITO NO CARTÃO)</p>
+                        <div class="form-input">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="NOME (ESCRITO NO CARTÃO)" id="nomecartao" name="nomecartao">
+                            <i class="fas fa-times-circle"  id="iconerronomecartao"></i>
+                        </div>
+                        <p class="txterro" id="erronomecartao"></p>
+                    </div>
+                    <div>
+                    <p class="textinfo">DATA DE VALIDADE (MÊS/ANO)</p>
+                    <div class="form-input">
+                        <i class="fas fa-calendar-alt"></i>
+                        <input type="text" placeholder="VALIDADE DO CARTÃO" id="validade" name="datavalidade">
+                        <i class="fas fa-times-circle"  id="iconerrovalidade"></i>
+                    </div>
+                    <p class="txterro" id="errovalidade"></p>
+                    </div>
+                </div>
+                <div class="campos">
+                        <div>
+                            <p class="textinfo">NÚMERO DO CARTÃO</p>
+                            <div class="form-input">
+                                <i class="fas fa-credit-card"></i>
+                                <input type="text" name="numerocartao" id="numero" placeholder="NÚMERO CARTÃO">
+                                <i class="fas fa-times-circle"  id="iconerronumerocartao"></i>
+                            </div>
+                            <p class="txterro" id="erronumero"></p>
+                        </div>
+                        <div>
+                            <p class="textinfo">CVC</p>
+                            <div class="form-input">
+                                <i class="fas fa-lock"></i>
+                                <input type="text" placeholder="CVC" id="cvc" name="cvc">
+                                <i class="fas fa-times-circle"  id="iconerrocvc"></i>
+                            </div>
+                            <p class="txterro" id="errocvc"></p>
+                        </div>
+                </div>
+                <p class="textinfo"><input type="checkbox" name="versenha" class="checkbox" onclick="mostrarsenha()">Mostrar Senha</p>
+                <button id="salvarusuario">CADASTRAR</button>
+            </div>    
+        </div>
+    </form>
+<script src="../script/cadastrarusuario.js"></script>
+</body>
+</html>

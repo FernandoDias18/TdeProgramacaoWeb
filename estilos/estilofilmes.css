@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap');
+:root {
+    --cor01: #6545E6;
+    --cor02: #4FCDF7;
+    --cor03: #C72AB6;
+    --cor04: #6545E6;
+    --cor05: #C13FFC;
+
+    --fontetitulo: 'Roboto', sans-serif;
+    --fonte02: 'Titillium Web', sans-serif;
+    --font03: 'Dancing Script', sans-serif;
+    --fontetexto: 'Andada Pro', serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-image: linear-gradient(-90deg,var(--cor01),var(--cor02));
+    height: 80px;
+    color: white;
+}
+.filmes, .informacoes{
+    padding: 8px;
+}
+.titulo{
+    padding-top: 20px;
+    text-align: center;
+    font-family: var(--font03);
+    font-size: 30px;
+}
+.cards {
+    margin: auto;
+    border-radius: 30px;
+    height: 620px;
+    width: 660px;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+}
+h2{
+    font-family: var(--fonte02);
+}
+img{
+    height: 500px;
+}
+.cardfilme, .filme, .infocomprar{
+    background-color: rgba(218, 218, 218, 0.562);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    padding: 10px;
+}
+#filmedois {
+    margin-left: 25px;
+}
+button {
+    background-color: var(--cor05);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.317);
+    font-family: var(--fontetitulo);
+}
+button:hover {
+    background-color: #be76e7cb;
+    cursor: pointer; 
+}
+.comprar {
+    margin: auto;
+    border-radius: 30px;
+    height: 620px;
+    width: 800px;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+}
+.infocomprar {
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--fontetexto);
+}
+.sinopse {
+    text-align: justify;
+    padding: 5px;
+    letter-spacing: 1px;
+}
