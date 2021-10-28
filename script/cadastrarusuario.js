@@ -94,3 +94,14 @@ function fLocalComunicaServidor(arquivo){
         }
     });
 }
+function mostrarsenha(){
+    var senha = document.getElementById("senha")
+    var confirmarsenha = document.getElementById("confirmarsenha")
+    if(senha.getAttribute("type") == "password") {
+        senha.setAttribute("type", "text");
+        confirmarsenha.setAttribute("type", "text");
+    }else {
+        senha.setAttribute("type", "password");
+        confirmarsenha.setAttribute("type", "password");
+    }
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../estilos/estilotelaformulario.css">
-    
+    <link rel="stylesheet" href="../estilos/fontawesome-free-6.0.0-beta2-web/css/all.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <script src="../script/jquery.js"></script>
 </head>
 <body>
     <div class="telaformulario">
@@ -15,15 +17,23 @@
             <p class="devider"></p>
             <p class="txttitulo">ENTRAR</p>
             <p class="textinfo">E-MAIL</p>
-            <p><input type="text" placeholder="E-MAIL" id="email"></p>
+            <div class="form-input">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="E-MAIL" id="email">
+                <i class="fas fa-times-circle" id="iconerroemail"></i>
+            </div>
             <p class="txterro" id="erroemail"></p>
             <p class="textinfo">SENHA</p>
-            <p><input type="password" placeholder="SENHA" id="senha"></p>
+            <div class="form-input">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="SENHA" id="senha">
+                <i class="fas fa-times-circle" id="iconerrosenha"></i>
+            </div>
             <p class="txterro" id="errosenha"></p>
             <p class="textinfo"><input type="checkbox" name="versenha" class="checkbox" onclick="mostrarsenha()">Mostrar Senha</p>
             <p class="textinfo"><a href="#">ESQUECEU A SENHA?</a></p>
             <button onclick="validarlogin()">ENTRAR</button>
-            <p class="link"><a href="cadastro.html" class="cadastrar">CADASTRAR</a></p>
+            <p class="link"><a href="paginaescolha.html" class="cadastrar">CADASTRAR</a></p>
         </div>
     </div>
 </body>
