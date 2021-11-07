@@ -30,15 +30,15 @@ function fLocalEventosClick(){
             document.getElementById("sobrenome").style.border = "solid 1px red"
             document.getElementById("iconerrosobren").style.display = "block" 
         }
+        if (cpf == ""){
+            document.getElementById('errocpf').innerHTML = `<p>ERRO! CPF inválido</p>`
+            document.getElementById("cpf").style.border = "solid 1px red"
+            document.getElementById("iconerrocpf").style.display = "block"
+        }
         if (numero == ""){
             document.getElementById('erronumero').innerHTML = `<p>ERRO! Nome inválido</p>`
             document.getElementById("numero").style.border = "solid 1px red"
             document.getElementById("iconerronumerocartao").style.display = "block" 
-        }
-        if (cpf < 11){
-            document.getElementById('errocpf').innerHTML = `<p>ERRO! CPF inválido</p>`
-            document.getElementById("cpf").style.border = "solid 1px red"
-            document.getElementById("iconerrocpf").style.display = "block"
         }
         if (email == ""){
             document.getElementById('erroemail').innerHTML = `<p>ERRO! E-mail inválido</p>`
@@ -72,10 +72,13 @@ function fLocalEventosClick(){
             document.getElementById("iconerrocvc").style.display = "block"
             return false;
         }
-        fLocalComunicaServidor("adicionarclientes")
-        alert("CADASTRO REALIZADO COM SUCESSO")
-        window.location.href = "../paginas/login.html";
-        return false;
+        if(nome.length >=  3 && sobrenome != "" && numero != "" && cpf != "" && confirmarsenha == senha && nomecartao != "" &&
+        validade != "" && cvc != ""){
+            fLocalComunicaServidor("adicionarclientes")
+            alert("CADASTRO REALIZADO COM SUCESSO")
+            window.location.href = "login.html";
+            return false;
+        }
 
 
     });
