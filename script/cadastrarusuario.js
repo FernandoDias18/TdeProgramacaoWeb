@@ -76,7 +76,7 @@ function fLocalEventosClick(){
         validade != "" && cvc != ""){
             fLocalComunicaServidor("adicionarclientes")
             alert("CADASTRO REALIZADO COM SUCESSO")
-            window.location.href = "login.html";
+            window.location.href = "index.html"
             return false;
         }
 
